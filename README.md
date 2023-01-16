@@ -1,7 +1,15 @@
 <div align="center">
+<<<<<<< HEAD
 World Weather
+=======
+
+# World Weather
+
+>>>>>>> df664ce (Updated README.md)
 A Weather Website made using React and OpenWeatherMap API
-<img src="demo.gif" alt="Website Demo" width="400">
+
+<img src="demo.gif" width="400" alt="Website Demo"/>
+
 </div>
 
 # Description
