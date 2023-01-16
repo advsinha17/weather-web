@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    background-color: #06c8f8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app {
+    padding: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.field {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 576px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Input field styles depending on input  */
+.error {
+    border: 1px solid red;
+}
+
+.valid {
+    border: #dbdbdb;
+}
+
+.in-list {
+    border: 1px solid green;
+}
+
+.container {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Weather card styling */
+.weather-card {
+    width: 310px;
+    height: 258px;
+    margin: 2rem;
+    border-radius: 12px;
+    border: none;
+    background-color: rgba(16, 14, 14, 0.5);
+    text-align: center;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px;
+    transition: all .3s ease-in-out;
+}
+
+.weather-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
+    cursor: pointer;
+}
+
+#place {
+    font-size: 2.25rem;
+}
+
+#temperature {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+#condition {
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 576px) {
+    .app {
+        padding: 4rem 2rem;
+    }
+
+    .field {
+        padding: 1rem 1.75rem;
+        width: 100%;
+    }
 }
