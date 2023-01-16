@@ -4,7 +4,7 @@
 
 A Weather Website made using React and OpenWeatherMap API
 
-<img src="demo.gif" width="400" alt="Website Demo"/>
+<img src="demo.gif" width="800" alt="Website Demo"/>
 
 </div>
 
