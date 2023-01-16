@@ -1,5 +1,5 @@
 <div align="center">
-# World Weather
+World Weather
 A Weather Website made using React and OpenWeatherMap API
 <img src="demo.gif" alt="Website Demo" width="400">
 </div>
